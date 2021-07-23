@@ -43,11 +43,73 @@ section {
 
   
 }
-.header-section {
-  background-color: #2f3e46;
+/* .header-section {
+  
   color: #cad2c5;
+  background-image: url("../images/livigno-wide.png");
+  background-size: 100%;
+  border: solid red;
+  background-color: #2f3e46;
    
+} */
+@media (min-width: 1400px) {
+  .header-section {
+  
+    color: #cad2c5;
+    background-image: url("../images/livigno-wide.png");
+    background-size: 100%;
+    border: solid red;
+    background-color: #2f3e46;
+    background-repeat: no-repeat;
+    background-position: center;
+     
+  }
+  .profile-picture {
+    content: url("../images/profile-pic-large.png");
+  }
+  
 }
+
+@media (max-width: 1400px) and (min-width: 769px) {
+  .header-section {
+  
+    color: #cad2c5;
+    background-image: url("../images/medium-background.JPG");
+    background-size: 100%;
+    border: solid red;
+    background-color: #2f3e46;
+    background-repeat: no-repeat;
+    background-position: center;
+     
+  }
+  .profile-picture {
+    content: url("../images/profile-pic-medium.png");
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+  .header-section {
+  
+    color: #cad2c5;
+    background-image: url("../images/small-background.JPG");
+    background-size:cover;
+    border: solid red;
+    background-color: #2f3e46;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 100%;
+  }
+  .profile-picture{
+    content: url("../images/IMG_1971.JPG");
+  }
+  
+}
+
+
+  
+
 
 .menu-tab {
   background-color: #354f52;
@@ -73,7 +135,7 @@ a {
 
 .header-text {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  
+  color: black;
 }
 
 .section-heading {
