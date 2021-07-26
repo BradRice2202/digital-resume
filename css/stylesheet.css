@@ -9,16 +9,12 @@ body{
 header {
   text-align: center;
   margin: 0;
-  padding: 5px;
+  /* padding: 5px; */
   border: none;
-  
+  display: block;
 }
 
-footer {
-  background-color: #343330;
-  text-align: center;
-  
-}
+
 
 aside {
   display: inline-flex;
@@ -40,9 +36,16 @@ section {
   border: none;
   margin: 0;
   position: relative;
-
   
 }
+
+.test{
+  margin-bottom: 0;
+}
+.social-media-heading{
+  margin-top: 0;
+}
+
 /* .header-section {
   
   color: #cad2c5;
@@ -52,81 +55,36 @@ section {
   background-color: #2f3e46;
    
 } */
-@media (min-width: 1400px) {
-  .header-section {
-  
-    color: #cad2c5;
-    background-image: url("../images/livigno-wide.png");
-    background-size: 100%;
-    border: solid red;
-    background-color: #2f3e46;
-    background-repeat: no-repeat;
-    background-position: center;
-     
-  }
-  .profile-picture {
-    content: url("../images/profile-pic-large.png");
-  }
-  
+
+
+.contact-me-list{
+  margin-bottom: 0;
 }
-
-@media (max-width: 1400px) and (min-width: 769px) {
-  .header-section {
-  
-    color: #cad2c5;
-    background-image: url("../images/medium-background.JPG");
-    background-size: 100%;
-    border: solid red;
-    background-color: #2f3e46;
-    background-repeat: no-repeat;
-    background-position: center;
-     
-  }
-  .profile-picture {
-    content: url("../images/profile-pic-medium.png");
-  }
-  
-}
-
-
-@media (max-width: 768px) {
-  .header-section {
-  
-    color: #cad2c5;
-    background-image: url("../images/small-background.JPG");
-    background-size:cover;
-    border: solid red;
-    background-color: #2f3e46;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 100%;
-  }
-  .profile-picture{
-    content: url("../images/IMG_1971.JPG");
-  }
-  
-}
-
-
-  
-
-
+ 
 .menu-tab {
-  background-color: #354f52;
-  
-  
+  background-color: #354f52; 
 }
 
 .main-content {
   background-color: #52796f; 
+  width: 100%;
+  
   
 }
 
 footer {
   margin: 0;
+  background-color: #343330;
+  /* padding: 5px; */
+  text-align: center;
+  width: 100%;
+  border:none;
+  
+}
+
+
+.footer-container {
   border: none;
-  padding: 5px;
-   
 }
 
 a {
@@ -173,6 +131,7 @@ aside > .section-container {
 .logos {
   display: flex;
   justify-content: center;
+  max-width: 200%;
 }
 
 .menu-container {
@@ -196,7 +155,15 @@ aside > .section-container {
   animation-duration: 1s;
   animation-iteration-count: initial;
   animation-fill-mode: forwards;
+  transition-delay: 5s;
     
+}
+.logo-size {
+  max-width: 200px;
+}
+
+.menu-list{
+  margin-left: -20px;
 }
 
 @keyframes magnify{
@@ -205,4 +172,80 @@ aside > .section-container {
   50%{filter: grayscale(100%);}
   100%{transform:scale(1.5)translateY(-80px);}
   100%{filter: grayscale(0%);}
+}
+
+@media (max-width: 768px) {
+  .header-section {
+  
+    color: #cad2c5;
+    background-image: url("../images/small-background.JPG");
+    background-size:cover;
+    background-color: #2f3e46;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 100%;
+  }
+  .profile-picture{
+    content: url("../images/IMG_1971.JPG");
+  }
+  .logo-size {
+    max-width: 80px;
+  }
+  .menu-tab{
+    width: 30%;
+  }
+
+  .section-text{
+    font-size: 80%;
+  }
+  li{
+    font-size: 80%;
+  }
+
+}
+
+@media (max-width: 1400px) and (min-width: 769px) {
+  .header-section {
+  
+    color: #cad2c5;
+    background-image: url("../images/medium-background.JPG");
+    background-size: 100%;
+    background-color: #2f3e46;
+    background-repeat: no-repeat;
+    background-position: center;
+     
+  }
+  .profile-picture {
+    content: url("../images/profile-pic-medium.png");
+  }
+  
+}
+
+@media (min-width: 1400px) {
+  .header-section {
+  
+    color: #cad2c5;
+    background-image: url("../images/livigno-wide.png");
+    background-size: 100%;
+    background-color: #2f3e46;
+    background-repeat: no-repeat;
+    background-position: center;
+     
+  }
+  .profile-picture {
+    content: url("../images/profile-pic-large.png");
+  }
+  
+}
+
+@media (max-width:400px){
+  .menu-list{
+    font-size: 80%;
+  }
+  .section-text{
+    font-size: 80%;
+  }
+  li{
+    font-size: 80%;
+  }
 }
