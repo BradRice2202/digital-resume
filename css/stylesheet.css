@@ -87,7 +87,7 @@ footer {
   border: none;
 }
 
-a {
+a{
   color: #a9d6e5;
 }
 
@@ -109,6 +109,8 @@ a {
   position: relative;
   left: 10px;
 }
+
+
 
 .section-container {
   padding: 5px;
@@ -248,4 +250,27 @@ aside > .section-container {
   li{
     font-size: 80%;
   }
+}
+
+.container{
+  justify-content: center;
+}
+
+.header-text{
+  text-align: center;
+}
+
+.column{
+  float: left;
+  width: 50%;
+}
+.modal-list::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.modal-content{
+  background-color: #7b8cde;
 }
