@@ -2,33 +2,36 @@
 <html lang="en">
 <html>
     <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <meta name="description" content="My Digital Resume">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>Bradley Rice Resume</title>
     </head>
-    <body>
-        <header class="header-section">
+    <body class="m-0">
+        <header class="header-section container-fluid m-0">
             
             <!-- <img class="profile-picture" src="images/IMG_1971.JPG" alt="picture of me" width="200" height="250"/> -->
-            <picture>
-                <!-- <source media="(max-width: 650px)" src="images/IMG_1971.JPG"> -->
-                <img class="profile-picture" src="" alt="picture of me" width="200" height="250"/>
-            </picture>
-            <hgroup class="header-text">
-                <h1>Bradley Rice</h1>
-                <h2 class="test">Web developer</h2>
-            </hgroup>
+            <div class="col-12">
+                <picture>
+                    <!-- <source media="(max-width: 650px)" src="images/IMG_1971.JPG"> -->
+                    <img class="profile-picture" src="" alt="picture of me" width="200" height="250"/>
+                </picture>
+                <hgroup class="header-text header">
+                    <h1>Bradley Rice</h1>
+                    <h2 class="mb-0">Web developer</h2>
+                </hgroup>
+            </div>
         </header>
     
-        <section>
+        <section class="container-fluid px-0 m-0">
                 
-                <aside class="menu-tab">
+                <aside class="menu-tab col-sm-3 col-md-2 m-0">
                     <div class="menu-container">
-                        <div class="section-container">
+                        <div class="section-container px-4 m-2">
                             <h3><u>Menu:</u></h3>
-                            <ul class="menu-list">
+                            <ul class="menu-list pl-2">
                                 <li><a href="#My info">My info</a></li>
                                 <li><a href="#Coding languages">Coding languages</a></li>
                                 <li><a href="#Hobbies">Hobbies</a></li>
@@ -43,7 +46,7 @@
                     </div>
                 </aside>
                 
-                <article class="main-content">
+                <article class="main-content col-sm-9 col-md-10 m-0">
                     <div class="main-content">
                         <div class="section-container">
                             <h3 class="section-heading" id="My info"><u>My info:</u></h3>
@@ -53,7 +56,7 @@
                                 challenged.
                             </p>
                         </div>
-                        <div class="section-container">
+                        <div class="section-container px-4">
                             <h3 class="section-heading" id="Coding languages"><u>Coding Languages:</u></h3>
                             <div class="logos">
                                 <img src="images/html5.png" alt="html logo" class="logo-size"/>
@@ -130,32 +133,33 @@
                 </article>
         
         </section>
-        
-            <footer class="footer-container">
-                <div>
-                    <h4 id="Social media" class="social-media-heading"><u>Social media:</u></h4>
-                        <div class="Social-media-logo-container">
-                            <div class="Social-media-logo">
-                                <a href="https://www.facebook.com/bradley.rice1/" target="_blank"><img src="images/facebook.png" alt="facebook logo" class="logo-size"></a>
+            <div class="container-fluid px-0">
+                <footer class="footer-container col-12 m-0">
+                    <div>
+                        <h4 id="Social media" class="social-media-heading m-0"><u>Social media:</u></h4>
+                            <div class="Social-media-logo-container">
+                                <div class="Social-media-logo">
+                                    <a href="https://www.facebook.com/bradley.rice1/" target="_blank"><img src="images/facebook.png" alt="facebook logo" class="logo-size"></a>
+                                </div>
+                                <div class="Social-media-logo">
+                                    <a href="https://www.instagram.com/braaadels/" target="_blank"><img src="images/instagram.svg" alt="instagram logo" class="logo-size" ></a>
+                                </div>
+                                <div class="Social-media-logo">
+                                    <a href="https://www.linkedin.com/in/bradley-rice-a13a04169/" target="_blank"><img src="images/linkedin.png" alt="linkedin logo" class="logo-size"></a>
+                                </div>
                             </div>
-                            <div class="Social-media-logo">
-                                <a href="https://www.instagram.com/braaadels/" target="_blank"><img src="images/instagram.svg" alt="instagram logo" class="logo-size" ></a>
-                            </div>
-                            <div class="Social-media-logo">
-                                <a href="https://www.linkedin.com/in/bradley-rice-a13a04169/" target="_blank"><img src="images/linkedin.png" alt="linkedin logo" class="logo-size"></a>
-                            </div>
-                        </div>
-                </div>
-                <div>
-                    <h4 id="Contact me"><u>Contact me:</u></h4>
-                    <ul class="contact-me-list">
-                        <li>Cell: 0713560503</li>
-                        <li>Email: bradley.rice2202@gmail.com</li>
-                    </ul>
-                    
-                </div>
+                    </div>
+                    <div>
+                        <h4 id="Contact me"><u>Contact me:</u></h4>
+                        <ul class="contact-me-list mb-0">
+                            <li>Cell: 0713560503</li>
+                            <li>Email: bradley.rice2202@gmail.com</li>
+                        </ul>
+                        
+                    </div>
 
-            </footer>
+                </footer>
+            </div>
     
     </body>
 
